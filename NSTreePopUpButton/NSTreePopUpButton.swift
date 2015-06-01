@@ -107,7 +107,8 @@ class NSTreePopUpButton: NSPopUpButton {
 
 extension NSMenu {
 
-    /// The menu represents the hierarchy of nodes. Every menu item has the `representedObject` set to a node.
+    /// The menu represents the hierarchy of nodes. The objects description value is uses as the menu items' title.
+    /// Every menu item has the `representedObject` set to a node.
     /// This methods returns nil when nodes is empty.
     ///
     /// :returns: A menu for nodes.
