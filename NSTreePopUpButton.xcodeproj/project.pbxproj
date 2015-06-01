@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10EC9BC01B1900BE00B7A4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC9BBF1B1900BE00B7A4B2 /* AppDelegate.swift */; };
+		10EC9BC21B1900BE00B7A4B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC9BC11B1900BE00B7A4B2 /* ViewController.swift */; };
+		10EC9BC41B1900BE00B7A4B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EC9BC31B1900BE00B7A4B2 /* Images.xcassets */; };
+		10EC9BC71B1900BE00B7A4B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EC9BC51B1900BE00B7A4B2 /* Main.storyboard */; };
+		10EC9BD31B1900BE00B7A4B2 /* NSTreePopUpButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC9BD21B1900BE00B7A4B2 /* NSTreePopUpButtonTests.swift */; };
+		10EC9BDD1B1900C800B7A4B2 /* NSTreePopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC9BDC1B1900C800B7A4B2 /* NSTreePopUpButton.swift */; };
+		10EC9BDF1B1900FC00B7A4B2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC9BDE1B1900FC00B7A4B2 /* Node.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10EC9BCD1B1900BE00B7A4B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10EC9BB21B1900BE00B7A4B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10EC9BB91B1900BE00B7A4B2;
+			remoteInfo = NSTreePopUpButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10EC9BBA1B1900BE00B7A4B2 /* NSTreePopUpButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSTreePopUpButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EC9BBE1B1900BE00B7A4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10EC9BBF1B1900BE00B7A4B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10EC9BC11B1900BE00B7A4B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10EC9BC31B1900BE00B7A4B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10EC9BC61B1900BE00B7A4B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10EC9BCC1B1900BE00B7A4B2 /* NSTreePopUpButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTreePopUpButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EC9BD11B1900BE00B7A4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10EC9BD21B1900BE00B7A4B2 /* NSTreePopUpButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTreePopUpButtonTests.swift; sourceTree = "<group>"; };
+		10EC9BDC1B1900C800B7A4B2 /* NSTreePopUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTreePopUpButton.swift; sourceTree = "<group>"; };
+		10EC9BDE1B1900FC00B7A4B2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10EC9BB71B1900BE00B7A4B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EC9BC91B1900BE00B7A4B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10EC9BB11B1900BE00B7A4B2 = {
+			isa = PBXGroup;
+			children = (
+				10EC9BBC1B1900BE00B7A4B2 /* NSTreePopUpButton */,
+				10EC9BCF1B1900BE00B7A4B2 /* NSTreePopUpButtonTests */,
+				10EC9BBB1B1900BE00B7A4B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10EC9BBB1B1900BE00B7A4B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10EC9BBA1B1900BE00B7A4B2 /* NSTreePopUpButton.app */,
+				10EC9BCC1B1900BE00B7A4B2 /* NSTreePopUpButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10EC9BBC1B1900BE00B7A4B2 /* NSTreePopUpButton */ = {
+			isa = PBXGroup;
+			children = (
+				10EC9BDC1B1900C800B7A4B2 /* NSTreePopUpButton.swift */,
+				10EC9BBF1B1900BE00B7A4B2 /* AppDelegate.swift */,
+				10EC9BC11B1900BE00B7A4B2 /* ViewController.swift */,
+				10EC9BC31B1900BE00B7A4B2 /* Images.xcassets */,
+				10EC9BC51B1900BE00B7A4B2 /* Main.storyboard */,
+				10EC9BBD1B1900BE00B7A4B2 /* Supporting Files */,
+				10EC9BDE1B1900FC00B7A4B2 /* Node.swift */,
+			);
+			path = NSTreePopUpButton;
+			sourceTree = "<group>";
+		};
+		10EC9BBD1B1900BE00B7A4B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10EC9BBE1B1900BE00B7A4B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10EC9BCF1B1900BE00B7A4B2 /* NSTreePopUpButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				10EC9BD21B1900BE00B7A4B2 /* NSTreePopUpButtonTests.swift */,
+				10EC9BD01B1900BE00B7A4B2 /* Supporting Files */,
+			);
+			path = NSTreePopUpButtonTests;
+			sourceTree = "<group>";
+		};
+		10EC9BD01B1900BE00B7A4B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10EC9BD11B1900BE00B7A4B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10EC9BB91B1900BE00B7A4B2 /* NSTreePopUpButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10EC9BD61B1900BE00B7A4B2 /* Build configuration list for PBXNativeTarget "NSTreePopUpButton" */;
+			buildPhases = (
+				10EC9BB61B1900BE00B7A4B2 /* Sources */,
+				10EC9BB71B1900BE00B7A4B2 /* Frameworks */,
+				10EC9BB81B1900BE00B7A4B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSTreePopUpButton;
+			productName = NSTreePopUpButton;
+			productReference = 10EC9BBA1B1900BE00B7A4B2 /* NSTreePopUpButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10EC9BCB1B1900BE00B7A4B2 /* NSTreePopUpButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10EC9BD91B1900BE00B7A4B2 /* Build configuration list for PBXNativeTarget "NSTreePopUpButtonTests" */;
+			buildPhases = (
+				10EC9BC81B1900BE00B7A4B2 /* Sources */,
+				10EC9BC91B1900BE00B7A4B2 /* Frameworks */,
+				10EC9BCA1B1900BE00B7A4B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10EC9BCE1B1900BE00B7A4B2 /* PBXTargetDependency */,
+			);
+			name = NSTreePopUpButtonTests;
+			productName = NSTreePopUpButtonTests;
+			productReference = 10EC9BCC1B1900BE00B7A4B2 /* NSTreePopUpButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10EC9BB21B1900BE00B7A4B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Matthias Hochgatterer";
+				TargetAttributes = {
+					10EC9BB91B1900BE00B7A4B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					10EC9BCB1B1900BE00B7A4B2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 10EC9BB91B1900BE00B7A4B2;
+					};
+				};
+			};
+			buildConfigurationList = 10EC9BB51B1900BE00B7A4B2 /* Build configuration list for PBXProject "NSTreePopUpButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10EC9BB11B1900BE00B7A4B2;
+			productRefGroup = 10EC9BBB1B1900BE00B7A4B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10EC9BB91B1900BE00B7A4B2 /* NSTreePopUpButton */,
+				10EC9BCB1B1900BE00B7A4B2 /* NSTreePopUpButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10EC9BB81B1900BE00B7A4B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EC9BC41B1900BE00B7A4B2 /* Images.xcassets in Resources */,
+				10EC9BC71B1900BE00B7A4B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EC9BCA1B1900BE00B7A4B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10EC9BB61B1900BE00B7A4B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EC9BC21B1900BE00B7A4B2 /* ViewController.swift in Sources */,
+				10EC9BDD1B1900C800B7A4B2 /* NSTreePopUpButton.swift in Sources */,
+				10EC9BC01B1900BE00B7A4B2 /* AppDelegate.swift in Sources */,
+				10EC9BDF1B1900FC00B7A4B2 /* Node.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EC9BC81B1900BE00B7A4B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EC9BD31B1900BE00B7A4B2 /* NSTreePopUpButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10EC9BCE1B1900BE00B7A4B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10EC9BB91B1900BE00B7A4B2 /* NSTreePopUpButton */;
+			targetProxy = 10EC9BCD1B1900BE00B7A4B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10EC9BC51B1900BE00B7A4B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10EC9BC61B1900BE00B7A4B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10EC9BD41B1900BE00B7A4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10EC9BD51B1900BE00B7A4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		10EC9BD71B1900BE00B7A4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSTreePopUpButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10EC9BD81B1900BE00B7A4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSTreePopUpButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10EC9BDA1B1900BE00B7A4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NSTreePopUpButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSTreePopUpButton.app/Contents/MacOS/NSTreePopUpButton";
+			};
+			name = Debug;
+		};
+		10EC9BDB1B1900BE00B7A4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NSTreePopUpButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSTreePopUpButton.app/Contents/MacOS/NSTreePopUpButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10EC9BB51B1900BE00B7A4B2 /* Build configuration list for PBXProject "NSTreePopUpButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EC9BD41B1900BE00B7A4B2 /* Debug */,
+				10EC9BD51B1900BE00B7A4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10EC9BD61B1900BE00B7A4B2 /* Build configuration list for PBXNativeTarget "NSTreePopUpButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EC9BD71B1900BE00B7A4B2 /* Debug */,
+				10EC9BD81B1900BE00B7A4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10EC9BD91B1900BE00B7A4B2 /* Build configuration list for PBXNativeTarget "NSTreePopUpButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EC9BDA1B1900BE00B7A4B2 /* Debug */,
+				10EC9BDB1B1900BE00B7A4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10EC9BB21B1900BE00B7A4B2 /* Project object */;
+}
