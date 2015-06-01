@@ -8,6 +8,13 @@
 
 import AppKit
 
+/// The `NSTreePopUpButton` class adds supports for binding to a tree controller and displays the tree structure in a hierarchy of menus.
+/// The `content` must be bound to `arrangedObjects` and `selectedIndex` to `selectionIndexPath` of a tree controller instance. This can be done in code or from the Interface Builder.
+///
+/// **Limitations**
+///
+/// - The `contentValues` options is currently not supported. You should override the `var description: String` method in your class and return  the value you want to display in the menu.
+/// - The class does not support multiple selections.
 class NSTreePopUpButton: NSPopUpButton {
     var observedContentKeyPath: String?
     var observedContentObject: AnyObject?
@@ -23,7 +30,6 @@ class NSTreePopUpButton: NSPopUpButton {
     private struct Context {
         static var SelectionIndex = "SelectionIndex"
         static var Content = "Content"
-        static var ContentValues = "ContentValues"
     }
     
     override func bind(binding: String, toObject observable: AnyObject, withKeyPath keyPath: String, options: [NSObject : AnyObject]?) {
@@ -60,6 +66,7 @@ class NSTreePopUpButton: NSPopUpButton {
         }
     }
     
+    /// Called from a menu item when selected from the user.
     func onMenuItemSelected(sender: NSMenuItem) {
         menu?.deselectAllItems()
         if let node = sender.representedObject as? NSTreeNode {
@@ -74,6 +81,7 @@ class NSTreePopUpButton: NSPopUpButton {
         }
     }
     
+    /// Displays the last items title in the button's cell.
     func updateCellWithSelectedItems(items: Array<NSMenuItem>) {
         if let cell = self.cell() as? NSPopUpButtonCell {
             // Don't use item from menu
@@ -93,55 +101,6 @@ class NSTreePopUpButton: NSPopUpButton {
             if let index = menu.selectItemsAtIndexPaths(indexPath) {
                 updateCellWithSelectedItems(menu.itemsWithState(NSOnState))
             }
-        }
-    }
-    
-    /// :returns: An attributed string by joining the items' titles.
-    private func attributedStringFromSelectedItems(items: [NSMenuItem]) -> NSAttributedString {
-        let titles = items.map{ $0.title }.reverse()
-        var attributedTitle = NSMutableAttributedString()
-        for title in titles {
-            var attributes = titleAttributes
-            if title == titles.first && titles.count > 1 {
-                attributes = highlightedTitleAttributes
-            } else {
-                attributedTitle.appendAttributedString(NSAttributedString(string: " "))
-            }
-            attributedTitle.appendAttributedString(NSAttributedString(string: title, attributes: attributes))
-        }
-        return attributedTitle
-    }
-    
-    private let DefaultTitleFontSize = CGFloat(25)
-    /// Returns the attributes of a title.
-    private var titleAttributes: [NSObject: AnyObject] {
-        get {
-            var attributes = [NSObject: AnyObject]()
-            if let font = self.font {
-                var titleFont = font
-                if let headerFont = NSFont(name: "HelveticaNeue-Thin", size: DefaultTitleFontSize) {
-                    titleFont = headerFont
-                }
-                attributes[NSFontAttributeName] = titleFont
-            }
-            
-            return attributes
-        }
-    }
-    
-    /// Returns the attributes of an highlighted title.
-    private var highlightedTitleAttributes: [NSObject: AnyObject] {
-        get {
-            var attributes = [NSObject: AnyObject]()
-            if let font = self.font {
-                var titleFont = font
-                if let headerFont = NSFont(name: "HelveticaNeue", size: DefaultTitleFontSize) {
-                    titleFont = headerFont
-                }
-                attributes[NSFontAttributeName] = titleFont
-            }
-            
-            return attributes
         }
     }
 }
